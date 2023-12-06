@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/need.css"> 
+    <title>Эндрю Гарфилд</title>
+    <script>
+        function greet() {
+            var name = prompt("Введите ваше имя:");
+            alert("Привет от Эндрю Гарфилда :), " + name + "!");
+        }
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if (username === "andrew1983" && password === "password") {
+                alert("Вход выполнен успешно!");
+            } else {
+                alert("Неправильное имя пользователя или пароль!");
+            }
+        }
+    </script>
+</head>
+<body>
+  <div id="login-container">
+    <h2>Вход</h2>
+    <input type="text" id="username" placeholder="Имя пользователя"><br>
+    <input type="password" id="password" placeholder="Пароль"><br>
+    <button id="login-btn" onclick="login()">Войти</button>
+</div>
+    <header>
+        <h2>Эндрю Гарфилд</h2>
+    </header>
+    <img src="css/img/por.jpg" width="200" height="270" alt="Моя фотография">
+    <button onclick="greet()">Нажмите, чтобы поздороваться</button>
+    <section id="biography">
+        <h2>Биография</h2>
+        <p  class="stroke">Эндрю Рассел Гарфилд (англ. Andrew Russell Garfield) - британский актер, родился 20 августа 1983 года. </p>
+        <p class="stroke">Он стал известным благодаря своим ролям в фильмах "Социальная сеть" и "Человек-паук".</p>
+        <p  class="stroke">Чтобы посмотреть больше информации о нем вы можете посетить <a href="https://www.kinopoisk.ru/name/1156574/?utm_referrer=www.google.com">Кинопоиск</a>.</p>
+    </section>
+    
+    <section id="filmography">
+        <h2>Фильмография</h2>
+        <ul>
+            <li  class="stroke">Социальная сеть (2010)</li>
+            <li  class="stroke">Я - Четвёртый (2011)</li>
+            <li  class="stroke">Воин (2011)</li>
+            <li  class="stroke">Человек-паук (2012)</li>
+            <li  class="stroke">Человек-паук 2: Высокое напряжение (2014)</li>
+            <li  class="stroke">По соображениям совести (2016)</li>
+        </ul>
+    </section>
+    
+    <section id="awards">
+        <h2>Награды</h2>
+        <ul>
+            <li  class="stroke">Номинация на премию "Оскар" в категории "Лучший актер" за фильм "Социальная сеть"</li>
+            <li  class="stroke">Номинация на премию "Золотой глобус" в категории "Лучший актер в фильме - драма" за фильм "Человек-паук"</li>
+        </ul>
+    </section>
+    <section id="gallery"> 
+        <h2>Галерея</h2> 
+        <img src="css/img/an2.jpg" width="200" height="200 alt="Andrew Garfield 1"> 
+        <img src="css/img/an3.jpg" width="200" height="200 alt="Andrew Garfield 2"> 
+        <img src="css/img/an4.jpg" width="200" height="200 alt="Andrew Garfield 3"> 
+      </section>
+</body>
+</html>
